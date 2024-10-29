@@ -190,6 +190,7 @@ html body {
     width: fit-content;
 }
 
+
 /*------------------------------MENU----------------------------------------*/
 
 #imageTop{
@@ -318,8 +319,8 @@ html body {
         padding: 10px;
     }
 
-    #dreamcoreImage{ /*DOESNT LET ME CHANGE THE WIDTH AND LENGHT*/
-        width: ;
+    #dreamcoreImage{ 
+        margin: 20px;
     }
 
     #column1 h1{
