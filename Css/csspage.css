@@ -1,0 +1,422 @@
+html body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../Pictures/BackGroundpic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;  
+    margin: 0;
+}
+
+.buttonsContainer{
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsContainer a{
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsContainer button {
+    width: 95%;
+    height: 70%;
+    background-color: black;
+    border-left: solid 2px white;
+    color: white;
+    font-size: 80%;
+    margin: 0;
+
+}
+
+.imagesContainer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagesContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    margin: 15px 0;
+
+}
+
+.imagesContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.textOnImage{
+    position: absolute;
+    color: azure;
+    font-size: clamp(1rem, 10vw, 2rem); 
+}
+
+.footer{
+    height: 110px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer button{
+    position: relative;
+    top: 20%;
+    left:2%;
+    color: white;
+    background-color: black;
+}
+
+.footer p{
+    color: white;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+
+/*----------------------------------Blogue-------------------------------*/
+
+#columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#column1 {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#column1 img{
+    width: 90%;
+}
+
+#column1 p{
+    margin: 20px;
+}
+
+#column1 #buttons{
+    display: flex;
+    justify-content: space-between /* doesnt work */
+}
+/*
+#repliesButton{
+    margin-left: auto;
+}
+*/
+
+#buttons button {
+    width: auto; 
+    margin: 0px;
+}
+
+#column2 {
+    width: 100%;
+}
+
+#column2 img{
+    width: 100%;
+    height: 375px;
+}
+
+.borderBottom {
+    padding-bottom: 20px;
+    border-bottom: solid black 1px;
+}
+
+#listPosts img{  /*PUT THE DOT ON TOP AND TEXT ON UNDER THE OTHER*/
+    width: 60px;
+    height: 60px;   
+}
+
+
+.tags{
+    background-color: grey;
+    color: white;
+    width: 100%;
+    margin: 3px 0;
+    padding: 0 3px;
+    font-size: 5vw;
+}
+
+#inspiration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#inspiration img{
+    width: 90%;
+    height: 337.5px;
+    margin: 10px;
+}
+
+#followMe{
+    display: flex;
+    flex-direction: column;
+}
+
+#iconRight{ /*Je dois mettre le texte a droite*/
+
+}
+
+#inscrire{
+    display: flex;
+    flex-direction: column;
+}
+
+#inscrire button{
+    margin: 10px 0;
+    width: fit-content;
+}
+
+/*------------------------------MENU----------------------------------------*/
+
+#imageTop{
+    background-image: url(../Pictures/Cursed.jpg);
+    width: 100%;
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    border: solid 2px grey;
+    margin-bottom: 5vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#imageTop h1{              /*Need to put the text on top left*/
+    justify-content: flex-end; 
+    align-items: flex-start;
+    top: 0.1px;
+}
+
+#poolcoreImgMenu{
+    width: 100%;
+    height: 900px
+}
+
+#poolcoreImgMenu img{
+    width: 100%;
+    height: 100%;
+}
+
+.textTransparant{
+    opacity: 50%;
+    margin-bottom: 20vw;
+}
+
+#lastPMenu{
+    opacity: 50%;
+    margin: 10px 0px 10px 0px;
+}
+
+.centerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#happyCereal{
+    width: 100%;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputs input{
+    width: 50%;
+    margin: 2vw 0;
+}
+#sendInput{
+    width: fit-content;
+    margin: 2vw 0 4vw 0;
+}
+
+/*---------------------------------CONTACT----------------------------------*/
+
+#checkboxBox{
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------------For pc-----------------------------------*/
+
+@media (min-width: 411px) {
+    .buttonsContainer{
+        height: 30px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;  
+    }
+
+    .buttonsContainer a{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonsContainer button{ 
+        margin: 0 0.2%;
+        width:5vw;
+        min-width: 50px;
+        font-size: 1vw;
+    }
+
+    .indexButton{
+        margin: 0 0 0 0.5vw;
+    }
+
+    .imagesContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imagesContainer img{
+        width: 400px;
+        margin: 10px;
+    }
+    
+    #columns{
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    #column1{
+        width: 150%;
+        height: fit-content;
+        margin-left: 10%;
+        margin-right: 2%;
+        padding: 10px;
+    }
+
+    #dreamcoreImage{ /*DOESNT LET ME CHANGE THE WIDTH AND LENGHT*/
+        width: ;
+    }
+
+    #column1 h1{
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+    #column1 p{
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+    #column2{
+        margin-right: 10%;
+        width: 50%;
+    }
+
+    #tags{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tags{
+        width: fit-content;
+        font-size: 1.5vw;
+        margin: 2px;
+    }
+
+    #inspiration{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #inspiration img{
+        width: 8vw;
+        height: 8vw;
+        margin: 5px;
+    }
+
+    #followMe {
+        flex-direction: row;
+        align-content: space-evenly; /* doesnt work*/
+    }
+
+    #imgCatering{
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #imageTop{
+        width: 90%;
+        height: 80%;   
+    }
+    
+    .collumnSection{
+        display: flex;
+        flex-direction: row;
+    }
+    #menuCollumn1{
+        width: 50%;
+        padding-left: 4.8%;
+        padding-bottom: 2vw;
+    }
+    #menuCollumn2{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    #menuCollumn3{
+        width: 30%;
+        padding-left: 4.8%;
+    }
+    #menuCollumn4{
+        width: 60%;
+    }
+    .textTransparant{
+        margin-bottom: 5vw;
+    }
+    #menuCollumn5{
+        padding-left: 5%;
+    }
+    #inputs input{
+        width: 15%;
+        margin: 0.5vw 0;
+    }
+    #sendInput{
+        margin: 0.5vw 0;
+    }
+    #poolcoreImgMenu{
+        height: 100%;
+    }
+    #inputsContact{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}   
